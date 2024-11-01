@@ -20,7 +20,6 @@ import java.util.Objects;
  * LiftRide
  */
 
-//@javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.JavaClientCodegen", date = "2024-10-05T21:22:04.664984076Z[GMT]")
 
 public class FullLiftRide {
     @SerializedName("time")
@@ -49,7 +48,6 @@ public class FullLiftRide {
      * Get time
      * @return time
      **/
-//    @Schema(example = "217", description = "")
     public Integer getTime() {
         return time;
     }
@@ -66,7 +64,6 @@ public class FullLiftRide {
      * Get liftID
      * @return liftID
      **/
-//    @Schema(example = "21", description = "")
     public Integer getLiftID() {
         return liftID;
     }
