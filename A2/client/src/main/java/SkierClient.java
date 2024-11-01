@@ -17,8 +17,7 @@ public class SkierClient {
   private static final int NUM_REQUESTS_PHASE_2 = 1680;
 
   public static void main(String[] args) throws InterruptedException {
-    ExecutorService executor = Executors.newFixedThreadPool(168);
-//    ExecutorService executor1 = Executors.newFixedThreadPool(32);
+    ExecutorService executor = Executors.newFixedThreadPool(TOTAL_THREADS);
     final RequestCounterBarrier successCounter = new RequestCounterBarrier();
     final RequestCounterBarrier UnSuccessCounter = new RequestCounterBarrier();
 
@@ -50,19 +49,9 @@ public class SkierClient {
       throws InterruptedException {
     CountDownLatch completed = new CountDownLatch(numberOfThread);
 
-//    for (int i = 0; i < numberOfThread; i++) {
-//      Runnable thread =  () -> {
-//        singleThreadLiftRideEvents(numberRequest, completed, successCounter,
-//            UnSuccessCounter);
-//      };
-//      new Thread(thread).start();
-//    }
-//    ExecutorService executor = Executors.newFixedThreadPool(numberOfThread);
     for (int i = 0; i < numberOfThread; i++) {
       executor.submit(() -> singleThreadLiftRideEvents(numberRequest, completed, successCounter, UnSuccessCounter));
     }
-//    executor.shutdown();
-//    executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
     completed.await();
   }
   public static void singleThreadLiftRideEvents(int numberRequest,
@@ -84,7 +73,6 @@ public class SkierClient {
       Integer skierID = generateRandomSkierID(); // Integer | ID of the resort of interest
       Integer time = generateRandomTime(); // Integer | time of interest
       Integer liftID = generateRandomLiftID(); // Integer | ID of the skier of interest
-      //    LiftRide body = new LiftRide(); // ResortIDSeasonsBody | Specify new Season value
       LiftRide body = new LiftRide()
               .time(time)
               .liftID(liftID);
