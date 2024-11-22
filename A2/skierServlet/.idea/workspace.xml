@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17bb9dcb-b865-48ad-994c-cce3c39f807b" name="Changes" comment="" />
+    <list default="true" id="17bb9dcb-b865-48ad-994c-cce3c39f807b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../A1/client-2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../A1/client-2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SkierConsumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SkierConsumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SkierConsumer/src/main/java/RabbitMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SkierConsumer/src/main/java/RabbitMQConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/main/java/SkierClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/main/java/SkierClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,6 +166,7 @@
       <workItem from="1728519235253" duration="2477000" />
       <workItem from="1730094548896" duration="4310000" />
       <workItem from="1730181054757" duration="53225000" />
+      <workItem from="1732082972195" duration="1402000" />
     </task>
     <servers />
   </component>
